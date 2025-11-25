@@ -3,11 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy</title>
+  <title>AgHire Privacy Policy</title>
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom style for the AgHire green */
+    .aghire-green {
+      background-color: #4FB53F;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            'aghire-green': '#4FB53F',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-  <h1>Privacy Policy</h1>
-  <p>This app collects your basic profile information when you log in via Facebook. Your data is used only to provide app functionality and will not be shared with third parties.</p>
-  <p>For questions, contact: vyaw2003@gmail.com</p>
+<body class="bg-black text-white font-sans min-h-screen flex flex-col">
+
+  <!-- Header Section (AgHire Green) -->
+  <header class="aghire-green text-white p-4 flex items-center shadow-lg">
+    <!-- Using a styled placeholder that visually matches the icon slot from the support page -->
+    <img 
+      src="assets/icon.jpg" 
+      alt="AgHire Icon Placeholder" 
+      class="w-16 h-16 rounded-xl object-cover border-2 border-white"
+    />
+    <h1 class="text-3xl font-bold ml-4">Privacy Policy</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-6 max-w-3xl mx-auto flex-grow">
+    
+    <h2 class="text-2xl font-semibold mb-4 text-aghire-green">1. Data Collection</h2>
+    <p class="mb-4 leading-relaxed">
+      This application, AgHire, collects your basic profile information (such as name and email address) when you log in via Facebook. This is necessary for user identification and to enable core app functionality.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-4 text-aghire-green">2. Data Usage</h2>
+    <p class="mb-4 leading-relaxed">
+      Your personal data is used exclusively to provide and improve the features of the AgHire app, including listing creation, communication between users, and account management. Your data will **not** be sold, rented, or shared with third parties for marketing purposes.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-4 text-aghire-green">3. Contact Information</h2>
+    <p class="mb-4 leading-relaxed">
+      If you have any questions or concerns regarding this Privacy Policy or how your data is handled, please contact us directly:<br>
+      <a href="mailto:vyaw2003@gmail.com" class="text-aghire-green hover:underline font-medium">vyaw2003@gmail.com</a>
+    </p>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="mt-8 py-4 text-xs text-gray-400 text-center border-t border-gray-800">
+    &copy; 2025 AgHire. All rights reserved.
+  </footer>
 </body>
 </html>
